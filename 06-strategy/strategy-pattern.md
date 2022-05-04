@@ -9,3 +9,9 @@
 ## About the Strategy Design Pattern
 
 Defines a family of algorithms, each one encapsulated and made interchangeable. Strategy lets the algorithm vary independently from clients that use it. Instead of thinking of the duck behaviors as a set of behaviors, they can be considered family of algorithms. These behaviors can be reused in other context since they are no longer dependant on the Duck classes.
+
+## Additional Examples
+
+- Reddit sort algorithm: New, Top, Hot, Controversial
+- eCommerce payment handler: Paypal, Venmo, Apple Cash
+- Travel Navigation: Car, Walk, Public Transit, Uber
