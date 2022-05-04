@@ -1,0 +1,7 @@
+name: design-patterns
+recipe: lamp
+config:
+  webroot: .
+services:
+  appserver:
+    type: php:8.1
