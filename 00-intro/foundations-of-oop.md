@@ -68,13 +68,13 @@ Describes the concept that you can access objects of different types through the
 abstract Pet {
   abstract public function greeting();
 }
-abstract Dog extends Animal {
+abstract Dog extends Pet {
   public function greeting() { return 'woof'; };
 }
-abstract Snake extends Animal {
+abstract Snake extends Pet {
   public function greeting() { return 'hiss'; };
 }
-abstract Cat extends Animal {
+abstract Cat extends Pet {
   public function greeting() { return 'judgemental stare'; };
 }
 ```
