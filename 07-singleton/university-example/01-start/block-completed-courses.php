@@ -5,7 +5,7 @@
  * Current Courses block.
  */
 
-$id = $_GET['StudentID'];
+$id = $_GET['StudentID'] ?? 1;
 $today = "2022-09-20";
 $query = "
   SELECT s.id,
@@ -37,7 +37,7 @@ $data = $pdo->query($query)->fetchALL(PDO::FETCH_ASSOC);
 
     <?php foreach ($data as $course) : ?>
       <tr>
-        <td><?php echo $course['abbr'] . " - " . $course['title']; ?></td>
+        <td><?php echo $course['abbr'] . ": " . $course['title']; ?></td>
         <td><?php echo $course['start']; ?></td>
         <td><?php echo $course['end']; ?></td>
         <td><?php echo $course['credits']; ?></td>

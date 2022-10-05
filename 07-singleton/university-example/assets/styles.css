@@ -7,7 +7,8 @@ body {
   font-family: 'Trebuchet MS', sans-serif;
   font-size: 100%;
   background-color: #fff;
-  color: #444;
+  background-image: linear-gradient(to right, #b6fbff, #83a4d4);
+  color: #333;
 }
 
 h1, p {
@@ -15,7 +16,7 @@ h1, p {
 }
 
 .wrapper {
-  max-width: 940px;
+  max-width: 1000px;
   margin: 0 20px;
   display: grid;
   grid-gap: 10px;
@@ -32,17 +33,18 @@ h1, p {
 }
 
 .wrapper > * {
-  background-color: #444;
-  color: #fff;
+  background-color: rgb(50, 68, 94, .05);
+  color: #333;
   border-radius: 5px;
+  border: solid 2px rgb(50, 68, 94, 1);
   padding: 20px;
   font-size: 100%;
 }
 a {
-  color: #fff;
+  color: #333;
   text-decoration: underline;
   text-decoration-style: wavy;
-  text-decoration-color: #bbb;
+  text-decoration-color: #555;
 }
 dt {
   font-weight: bold;
@@ -56,4 +58,14 @@ table {
 }
 th {
   text-align: left;
+}
+
+header.header {
+  background-color: rgb(50, 68, 94, 1);
+  color: #b3f7fe;
+  font-size: 2rem;
+}
+
+.error {
+  color: #930b0b;
 }

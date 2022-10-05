@@ -5,7 +5,7 @@
  * Welcome block.
  */
 
-$id = $_GET['StudentID'];
+$id = $_GET['StudentID'] ?? 1;
 $query = "
   SELECT name, email, phone, office_hours as hours
   FROM students s

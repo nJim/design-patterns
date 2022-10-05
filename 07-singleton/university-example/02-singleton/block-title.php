@@ -7,7 +7,7 @@
 
 require_once 'Connect.php';
 
-$id = $_GET['StudentID'];
+$id = $_GET['StudentID'] ?? 1;
 $query = "SELECT first_name, last_name FROM students WHERE id = $id";
 $data = Connect::getInstance()->getConnection()->query($query)->fetch();
 

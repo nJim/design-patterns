@@ -7,7 +7,7 @@
 
 require_once 'Connect.php';
 
-$id = $_GET['StudentID'];
+$id = $_GET['StudentID'] ?? 1;
 $today = "2022-09-20";
 $query = "
   SELECT s.id,
@@ -38,7 +38,7 @@ $data = Connect::getInstance()->getConnection()->query($query)->fetchALL(PDO::FE
 
     <?php foreach ($data as $course) : ?>
       <tr>
-        <td><?php echo $course['abbr'] . " - " . $course['title']; ?></td>
+        <td><?php echo $course['abbr'] . ": " . $course['title']; ?></td>
         <td><?php echo $course['start']; ?></td>
         <td><?php echo $course['end']; ?></td>
         <td><?php echo $course['credits']; ?></td>

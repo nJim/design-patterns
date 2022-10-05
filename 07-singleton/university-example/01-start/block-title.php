@@ -5,7 +5,7 @@
  * Welcome block.
  */
 
-$id = $_GET['StudentID'];
+$id = $_GET['StudentID'] ?? 1;
 $query = "SELECT first_name, last_name FROM students WHERE id = $id";
 
 $pdo = new PDO('mysql:host=database;dbname=lamp', 'lamp', 'lamp');
