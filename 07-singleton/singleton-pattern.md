@@ -9,7 +9,7 @@ Singletons create one-of-a-kind objects that have only one instance, ever. They 
 - **You do not care about initialization of this instance at runtime**: The object is not loaded into memory until it is used. This is a major difference of singletons vs global variables.
 - **You need to access it across your application**: Any part of a program can access the object from a globally accessible space. This is no need to pass objects into difference scopes.
 
-## Creating our first singlton
+## Creating our first singleton
 
 A core function of object-oriented programming is the ability of a class to be used as a pattern for instantiating multiple objects.
 
