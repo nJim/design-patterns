@@ -18,4 +18,4 @@ Someone has already solved your problems. Design Patterns are a general purpose 
 
 - [Textbook description](07-singleton/singleton-pattern.md): Singletons create one-of-a-kind objects that have only one instance, ever. They are the easiest pattern to implement, but the reasons for using a singleton are nuanced and buck most OOP conventions.
 - [Settings Example](07-singleton/settings-example/final/settings.php): An example illustrating how global configuration or settings can be stored in a singleton so that the values are shared across all parts of the application.
-- [University Example](07-singleton/university-example/final/Connect.php): A more compled example of a singleton used for connecting users to a database. All queries share the same instance of the connection object.
+- [University Example](07-singleton/university-example/final/Connect.php): A more complex example of a singleton used for connecting users to a database. All queries share the same instance of the connection object.
