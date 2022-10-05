@@ -47,6 +47,18 @@ class DBConnnect {
 $database = DBConnnect::getInstance();
 ```
 
+## But we rarely use this pattern
+
+Singletons are great to learn but seldom used. There are other higher level patterns that offer the benefits of the singleton, but with additional programming support. For example, many implementations of the factory pattern will use a singleton-like mechanism to instantiate objects from a shared class; like a LoggerFactory.
+
+Alex Miller's tech blog had a good article [_Patterns I Hate #1: Singleton_](https://web.archive.org/web/20120603233658/http://tech.puredanger.com/2007/07/03/pattern-hate-singleton) that reflects on the drawbacks of this pattern. Reasons to avoid singletons include:
+
+1. Hides dependencies – A component that uses one or more singletons is hiding crucial information about your dependencies.
+2. Hard to test – The hidden coupling of users on a singleton makes testing a nightmare as there is no way to mock out or inject a test instance of the singleton.
+3. Hard to subclass – Since initialization occurs in a singleton in static code, it is not amenable to subclassing because subclasses inherit the initialization code without the chance to override it.
+4. It’s a lie! – Each thread can have its own instance of the singleton. While not a problem for most work, as we move towards concurrent and multithreaded programming, the pattern offers less value.
+5. A singleton today is a multiple tomorrow – It’s not at all unusual to discover that you now need 2 or more of something you previously only needed one of.
+
 ## Examples
 
 - Singular interface: logging, database connection
