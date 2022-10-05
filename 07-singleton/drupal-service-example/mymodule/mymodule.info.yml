@@ -1,0 +1,4 @@
+name: Service Container Example
+type: module
+description: Show how services are similar to singletons.
+core_version_requirement: ^8 || ^9

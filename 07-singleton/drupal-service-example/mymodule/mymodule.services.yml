@@ -1,0 +1,3 @@
+services:
+  mymodule.app_settings:
+    class: Drupal\mymodule\AppSettings
