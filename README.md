@@ -13,3 +13,9 @@ Someone has already solved your problems. Design Patterns are a general purpose 
 - [Interfaces](04-interfaces/final.php): Identify the aspects of the application that vary and separate them from what stays the same. This is the start of encapsulation using interfaces.
 - [Encapsulation](05-encapsulate/final.php): Behaviors are created to encapsulate the parts of the system that change. Various strategies are cerated for each behavior -- programming to the interface, not to the implementation.
 - [Strategy Pattern](06-strategy/strategy-pattern.md): Sunrise! We secretly completed our first design pattern. Discuss the Strategy Design Pattern and related takeaways from this exercise.
+
+## The Singleton: One of a kind objects
+
+- [Textbook description](07-singleton/singleton-pattern.md): Singletons create one-of-a-kind objects that have only one instance, ever. They are the easiest pattern to implement, but the reasons for using a singleton are nuanced and buck most OOP conventions.
+- [Settings Example](07-singleton/settings-example/final/settings.php): An example illustrating how global configuration or settings can be stored in a singleton so that the values are shared across all parts of the application.
+- [University Example](07-singleton/university-example/final/Connect.php): A more compled example of a singleton used for connecting users to a database. All queries share the same instance of the connection object.
